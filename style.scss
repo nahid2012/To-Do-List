@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, hsla(344, 97%, 63%, 1) 0%, hsla(232, 90%, 59%, 1) 100%);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .container {
+        margin-top: 100px;
+        width: 30%;
+        background: #fff;
+        color: #00008B;
+        border-radius: 10px;
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            margin: 20px auto;
+
+            img {
+                height: 45px;
+            }
+        }
+
+        input {
+            margin-left: 30px;
+            padding: 5px 5px;
+            font-size: 15px;
+            border: 1px solid #00008B;
+        }
+
+        button {
+            padding: 10px 40px;
+            font-size: 15px;
+            background: #00008B;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #7DF9FF;
+                background: linear-gradient(90deg, rgb(21, 100, 202) 23%, hsla(233, 100%, 37%, 1) 92%);
+            }
+        }
+
+        ol {
+            color: rgb(0, 0, 0);
+            margin: auto;
+            list-style: none;
+            width: 80%;
+
+            li {
+                font-size: 20px;
+                line-height: 2;
+                background: url('images/unchecked.png') no-repeat left center;
+                background-size: 20px 20px; /* Set the size of the image */
+                padding-left: 30px;
+
+                &.clicked {
+                    font-size: 20px;
+                    line-height: 2;
+                    text-decoration: line-through;
+                    background: url('images/checked.png') no-repeat left center;
+                    background-size: 20px 20px;
+                    padding-left: 30px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        right: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
