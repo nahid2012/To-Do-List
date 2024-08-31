@@ -66,23 +66,23 @@ body {
                 background: url('images/unchecked.png') no-repeat left center;
                 background-size: 20px 20px; /* Set the size of the image */
                 padding-left: 30px;
+                display: flex;
+                align-items: center;
+                position: relative;
 
-                &.clicked {
+                &.checked {
                     font-size: 20px;
                     line-height: 2;
                     text-decoration: line-through;
                     background: url('images/checked.png') no-repeat left center;
                     background-size: 20px 20px;
                     padding-left: 30px;
-                    display: flex;
-                    align-items: center;
-                    position: relative;
+                }
 
-                    i {
-                        position: absolute;
-                        right: 50px;
-                        cursor: pointer;
-                    }
+                i {
+                    position: absolute;
+                    right: 50px;
+                    cursor: pointer;
                 }
             }
         }
